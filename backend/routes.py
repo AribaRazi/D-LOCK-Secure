@@ -650,6 +650,8 @@ def download_file(file_hash):
         # Decrypt file
         print(f"🔓 Attempting decryption...")
         try:
+            print(f"DEBUG - received key repr: {repr(decryption_key)}")
+            print(f"DEBUG - key length: {len(decryption_key)}")
             decrypted_data = decrypt_file(encrypted_data, decryption_key)
             print(f"✅ Decryption successful: {len(decrypted_data)} bytes")
         except ValueError as e:
