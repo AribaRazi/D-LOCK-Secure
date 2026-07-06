@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "ariba2525.pythonanywhere.com";
+const API_BASE_URL = "https://ariba2525.pythonanywhere.com";
 
 const client = axios.create({
   baseURL: API_BASE_URL,
